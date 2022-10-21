@@ -1,0 +1,107 @@
+*{
+    border: 1px solid red;
+}
+
+
+.myBanana{
+    min-height: 2000px;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* .myBanana > section:nth-child(1) {flex-basis: 10%;}
+.myBanana > section:nth-child(2) {flex-basis: 20%;}
+.myBanana > section:nth-child(3) {flex-basis: 10%;}
+.myBanana > section:nth-child(4) {flex-basis: 40%;} */
+.my-rotten-banana{
+    /* border :1px solid black; */
+    height:10%;
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 20px;
+
+    font-size: 20px;
+}
+#rotten-image{
+    border-radius: 50%;
+    height: 100%;
+    
+}
+/* .my-rotten-banana > img {
+    size: 100%;
+} */
+
+.myBanana-title {
+    border :1px solid black;
+    height: 7%;
+    width:100%;
+    background-color: cadetblue;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+.myBanana-detail{
+    border :1px solid black;
+    height: 20%;
+    width: 100%;
+    display: flex;
+}
+.myBanana-photo{
+    border :1px solid black;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myBanana-photo > #photo {
+    height:70%;
+    border-radius: 50%;
+}
+.myBanana-content {
+    border :1px solid black;
+    width:70%;
+    
+}
+.myBanana-info{
+    border :1px solid black;
+  
+    display: flex;
+    
+}
+.myBanana-name{
+    font-size: 40px;
+}
+.myBanana-address{
+    font-size: 20px;
+    padding : 10px;
+}
+.myBanana-changeInfo{
+    width:50px;
+    height:50px;
+    padding: 10px;
+}
+.myBanana-changeInfo > img {
+    width:100%;
+    height:100%;
+}
+.myBanana-intro{
+    font-size: 40px;
+}
+.myBanana-temp{
+    font-size: 40px;
+}
+
+/* ************************************************** */
+.myBanana-category{
+    border :1px solid black;
+    height: 10%;
+    display: flex;
+}
+.myBanana-sell{
+    border :1px solid black;
+    height: 40%;
+}

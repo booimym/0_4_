@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://i.ibb.co/4tCGZqD/Banana.png">
+    <title>바꾸고 나누자 나랑: 바나나 마켓</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f7459b8054.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <main>
+        <!-- header 시작----------------------------------------------------------------------------------------- -->
+        <header>
+            <section class="section-topmenu">
+                <a href="#" class="topmenu__alarm fa-regular fa-bell">알람</a>
+                <a href="#" class="topmenu__talk fa-regular fa-comment">바나나톡</a>
+                <a href="#" class="topmenu__login">로그인/회원가입
+
+                </a>
+            </section>
+            <section class="section-query">
+                <div class="query__area">
+                    <a href="#">
+                        <img src="images/banana-logo.png" id="logo-img">
+                    </a>
+                    <div class="query__logo">
+                        <p>바꾸고 나누자 나랑</p>
+                        <p id="query__banana">Banana Market</p>
+                    </div>
+                </div>
+
+                <article class="search-area">
+
+                    <!-- form : 내부 input태그의 값을 서버 또는 페이지로 전달(제출) -->
+                    <form action="#">
+                        <fieldset>
+                            <input type="search" id="query" name="query" placeholder="검색어를 입력해주세요">
+                            <button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass">
+                            </button>
+                        </fieldset>
+                    </form>
+                </article>
+                <div class="sellingMy">
+                    <div>내 물건<br>판매하기</div>
+                </div>
+            </section>
+
+        </header>
+
+
+        <!-- header 끝----------------------------------------------------------------------------------------- -->
+
+
+        <section class="question-section">
+            <div class="make-question">
+                <a href="#">문의/안내 내역</a>
+                <a href="#">문의하기</a>
+            </div>
+            <form action="#" method="post" id="question-form">
+                <table class="question-table" border="1px">
+                    <tbody>
+                        <tr class="question__category">
+                            <td class="question-title first-td">
+                                <span>* 유형</span>
+                            </td>
+
+                            <td class="category-list">
+                                <select name="category-list" id="category">
+                                    <option value="">카테고리 선택</option>
+                                    <option value="구매/판매">구매/판매</option>
+                                    <option value="운영정책">운영정책</option>
+                                    <option value="계정/인증">계정/인증</option>
+                                    <option value="거래 품목">거래 품목</option>
+                                    <option value="거래 매너">거래 매너</option>
+                                    <option value="이용 제재">이용 제재</option>
+                                </select>
+                            </td>
+
+                        </tr>
+                        <tr class="question__title">
+                            <td class="question-title first-td">
+                                <span>* 제목</span>
+                            </td>
+                            <td>
+                                <input type="text" id="title" placeholder="제목을 입력해주세요.">
+                            </td>
+
+                        </tr>
+                        <tr class="question__content">
+                            <td id="content-box">
+                                <textarea name="question-content" 
+                                    placeholder="내용 입력"></textarea><br>
+                            </td>
+                        </tr>
+                        <tr class="question__add-img">
+                            <td class="add-img__title first-td">
+                                <p>사진첨부</p>
+                            </td>
+                            <td class="add-img__img">
+                                <input type="image" id="">
+                                <div class="add-img__added-img">
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="question__message">
+                            <td class="message-title first-td">
+                                <p>안내 사항</p>
+                            </td>
+                            <td class="message-content">
+                                <li>
+                                    <ul>고객센터 운영시간은 10:00 ~ 19:00에요.</ul>
+                                    <ul>답변에는 시간이 소요됩니다. 조금만 기다려주세요 :)</ul>
+                                    <ul>문의 내용을 자세하게 남겨주시면 빠른 답변에 도움이 됩니다.</ul>
+                                    <ul>산업안전보건법에 따라 고객응대 근로자 보호조치를 하고 있으며 모든 문의는 기록으로 남습니다.</ul>
+                                </li>
+                            </td>
+                        </tr>
+                        <tr class="question__submit">
+                            <td colspan="2" id="submit-button">
+                                <button>문의하기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- footer 시작----------------------------------------------------------------------------------------- -->
+
+    <footer>
+        <p>
+            Copyright &copy; KH Information Educational Institute A-Class 중고거래 프로젝트 팀
+        </p>
+        <article>
+            <a href="#">프로젝트 소개</a>
+            <span> | </span>
+            <a href="#">이용약관</a>
+            <span> | </span>
+            <a href="#">개인정보취급방침</a>
+            <span> | </span>
+            <a href="#">고객센터</a>
+        </article>
+    </footer>
+    <!-- footer 끝----------------------------------------------------------------------------------------- -->
+
+
+</body>
+
+</html>
