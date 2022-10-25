@@ -69,8 +69,10 @@
 /* 섹션3********************************************************************************************************섹션3 */
 .myBanana-detail{
     /* border :2px solid yellowgreen; */
-    background-color: rgb(235, 233, 233);
-    border : 5px solid #ddd;
+    /* background-color: rgb(235, 233, 233);
+    border : 5px solid #ddd; */
+    border: 5px solid #ddd;
+    background-color: var(--yellow);
     border-radius: 3%;
     height: 220px;
     width: 100%;
