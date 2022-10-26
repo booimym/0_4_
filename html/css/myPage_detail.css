@@ -1,0 +1,62 @@
+* {
+    border : 2px solid red;
+}
+
+.total {
+    min-height: 1000px;
+}
+
+.category {
+    display: flex;
+    padding : 30px;
+}
+
+.category > * {
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.review_1 {
+    display: flex;
+    margin: 30px;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.photo > * {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin-top: 10px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.row2, .row3 {
+    display: flex;
+}
+
+.row1 > * {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.row2 > * {
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+.name {
+    font-size : 20px;
+    font-weight: bold;
+}
