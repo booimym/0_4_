@@ -1,7 +1,7 @@
 
 const conB = document.getElementById("badsection");
 conB.style.display = 'none';
-document.getElementById("badchoice").addEventListener("change",function(){
+document.getElementById("badchoice").addEventListener("click",function(){
         if(conB.style.display=='none'){ 		
     	conB.style.display = 'block';
         conG.style.display = 'none'; 	
@@ -11,6 +11,7 @@ document.getElementById("badchoice").addEventListener("change",function(){
     }
 
 })
+
 
 // document.getElementById("goodchoice").addEventListener("change",function(){
 //     var con = document.getElementById("goodsection");

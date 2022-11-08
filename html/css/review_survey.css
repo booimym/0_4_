@@ -43,7 +43,7 @@
     
 }
 .goodchoice:checked + label {
-     
+    
     background-image: url(../images/banana-logo.png);
     background-repeat: no-repeat;
     background-size : 55px;
@@ -51,7 +51,7 @@
 }
 
 .goodchoice:un + label {
-     
+    
     background-image: url(../images/banana-logo.png);
     background-repeat: no-repeat;
     background-size : 55px;

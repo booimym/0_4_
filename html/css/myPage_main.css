@@ -1,6 +1,6 @@
-/* *{
+*{
         border: 1px solid red;
-}   */
+}  
 /* /* 
 섹션 1 5
 섹션 2 10
@@ -245,15 +245,6 @@
     letter-spacing: 0px;
 }
 
-.content-comment {
-    /* display: flex;
-    justify-content: space-between; */
-    margin-top:50px;
-
-}
-
-
-
 /* .content-comment>*{
     display: flex;
 
@@ -289,10 +280,11 @@
  */
 
 /* favorite__pack */
+
 .content-favorite {
     display: flex;
-    margin-bottom: 50px;
-    
+    margin-top:50px;
+
 }
 
 
@@ -304,22 +296,32 @@
 .favorite__pack{
     display: flex;
     flex-direction: column;
-    height: 315px;
+    /* height: 315px; */
     border: 1px solid #ddd;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 
 
-.favorite__pack img{
+.favorite__pack img{ /* 이게 옷사진인듯???????????????????????? */
     height: 100%;
     width: 100%;
     border-radius: 15px;
     
 }
 
+.favorite__pack > div {
+    position :relative;
+}
 
 
+.fa-ellipsis-vertical {
+    z-index: 1002;
+    position: absolute;
+    right : 10px;
+    top : 10px;
+    cursor: pointer;
+}
 
 
 .fa-heart{
@@ -329,7 +331,7 @@
 
     width: 25px;
     height: 25px;
-    font-size: 18px;
+    font-size: 13px;
 
     border: 1px solid #ccc;
     border-radius: 50%;
@@ -353,6 +355,142 @@
 .favorite__content {
     margin-left: 5px;
   
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    font-size: 12px;
+}
+
+.favorite__price{
+    font-weight: 700;
+    font-size: 13px;
+    height: 30px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+}
+
+.testcolor{
+    color: black;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: var(--menu);
+}
+.testcolor2{
+    color: orangered;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+/* ************************************************************** 기존구문*/
+/* .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-add {
+    margin-bottom: 20px;
+}
+
+
+#main-img{
+    padding: 0;
+    margin: 0;
+    height: 428px;
+    
+}
+
+.content-comment>div{
+    font-weight: 700;
+    font-size: 1.75rem;
+    letter-spacing: 0px;
+}
+
+.content-comment {
+    margin-top:50px;
+}
+
+
+
+.content-favorite {
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+
+
+
+.favorite__pack{
+    display: flex;
+    flex-direction: column;
+    height: 315px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+
+
+
+.favorite__pack img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+
+
+
+
+.fa-heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #ccc;
+    margin-right: 10px;
+    padding-top: 3px;
+    
+}
+
+
+
+.favorite__price-heart {
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.favorite__content {
+    margin-left: 5px;
+    
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -391,5 +529,41 @@
     justify-content: center;
     align-items: center;
     font-size: 15px;
+} */
+/*----------------------------------------------------*/
+/* .content-comment>*{
+    display: flex;
+
+    
+    align-items: center;
+
+    height: 50px;
+    width: 15%;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
 }
+
+.content-comment > p{
+    font-size: 30px;
+    flex-basis: 30%;
+    padding-left: 15px;
+    align-items: center;
+    
+    display: flex;
+}
+
+
+
+.content-comment >a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ */
+
+/* favorite__pack */
 
