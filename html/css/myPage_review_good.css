@@ -1,0 +1,46 @@
+.title{
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+.title > * {
+    padding: 50px 30px 50px 30px;
+}
+
+
+.content{
+    display: flex;
+}
+
+.side{
+    border-right: 1px solid #ddd;
+    padding : 30px;
+    font-size: 18px;
+    width: 30%;
+}
+
+.side > div {
+    display: flex;
+    padding : 30px;
+
+}
+
+.main {
+    padding :30px;
+    width : 70%;
+}
+
+.main_title {
+
+    font-size: 18px;
+    padding:30px;
+}
+
+.main_content > div {
+    border-bottom: 1px solid #ddd;
+    padding:30px;
+}

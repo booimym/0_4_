@@ -1,0 +1,105 @@
+/* *{
+        border: 1px solid red;
+} */
+
+/* **섹선1************************  */
+.title {
+    display : flex;
+
+}
+.title > .title_image {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title_image >img:only-child{
+    width: 20px;
+    height: 20px;
+}
+.title > p:only-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+/* 섹선2*************************** */
+.goodchoice {
+    display: none;
+}
+.badchoice {
+    display : none;
+}
+.goodchoice + label {
+    width : 65px; height : 65px; border : 1px solid #ccc;
+    cursor : pointer;
+
+    /* 수평분할 + 크기조정 0 */
+    display : inline-block; 
+
+    background-image: url(../images/banana-logo.png);
+    background-repeat: no-repeat;
+    background-size : 55px;
+    
+}
+.goodchoice:checked + label {
+     
+    background-image: url(../images/banana-logo.png);
+    background-repeat: no-repeat;
+    background-size : 55px;
+    background-position: -1px 10px;
+}
+
+.goodchoice:un + label {
+     
+    background-image: url(../images/banana-logo.png);
+    background-repeat: no-repeat;
+    background-size : 55px;
+    /* background-position: -1px 4px; */
+}
+
+.badchoice + label {
+    cursor : pointer;
+
+    /* 수평분할 + 크기조정 0 */
+    display : inline-block; 
+}
+/****섹선3(1)*************************** */
+/****섹선4(1)************************  */
+.goodAnswer {
+    display: flex;
+    flex-direction: column;
+}
+/****섹선3(2)*************************** */
+/* **섹선4(2)************************  */
+.badAnswer {
+    display: flex;
+    flex-direction: column;
+}
+/* **섹선5************************  */
+/* .question2 > div:only-of-type{
+    display: flex;
+    justify-content: center;
+} */
+.question {
+    display: flex;
+}
+
+.question_leaf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:20px; */
+}
+.question_leaf >img:only-child   {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.question > p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
