@@ -8,3 +8,15 @@ function openPop() {
 function closePop() {
     document.getElementById("popup_layer").style.display = "none";
 }
+
+
+/* const anotherPop = doucument.getElementById("anotherPop");
+anotherPop.style.display = "none";
+document.getElementById("dot").addEventListener("click", function(){
+
+    anotherPop.style.display = "block";
+
+})
+ */
+
+document.getElementById("anotherPop").style.display="none";

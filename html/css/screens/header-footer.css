@@ -18,6 +18,11 @@ main{
     margin:auto; /*body태그 가로방향 가운데 정렬*/
 }
 
+body {
+    width: 1690px;
+    margin: auto;
+}
+
 /* footer -------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------- */
 
@@ -53,6 +58,12 @@ footer span {
 /* header-------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 
+#query__banana {
+    font-family: 'Noto Serif', serif;
+    /* font-weight: bold; */
+}
+
+
 header{
     height: 200px;
 
@@ -72,21 +83,24 @@ header>section:nth-child(1){flex-basis: 30%;  }
 header>section:nth-child(2){flex-basis: 70%; }
 
 
+.query__area {
+    display: flex;
+    flex-direction: row;
+}
 
 .section-menu{
     display: flex;
+    
 }
 
 .section-topmenu{
     flex-basis: 30%; 
     height: 100%;
-    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
 }
-.section-query{
-    flex-basis: 30%; 
-    height: 100%;
-    /* justify-content: space-between; */
-}
+
 
 
 
@@ -118,12 +132,11 @@ header>section:nth-child(2){flex-basis: 70%; }
 /* ------------------------------------------- */
 .section-query{
     width: 100%;
+    padding-right: 20px;
     
 }
 
-.section-query>*:nth-child(1){
-    width: 20%;
-}
+
 .section-query>*:nth-child(2){
     width: 50%;
 }
@@ -133,9 +146,9 @@ header>section:nth-child(2){flex-basis: 70%; }
 
 .section-query>*:nth-child(1){
     /* background-color: #455ba8; */
-    padding-right: 50px;
+    /* padding-right: 50px; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
 }
@@ -184,24 +197,27 @@ header>section:nth-child(2){flex-basis: 70%; }
 }
 .query__logo>p:first-child {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: rgba(0,0,0,0.6);
 }
 
 #query__banana {
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 #logo-img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
 
 /* 검색창 입력상자------------- */
-.search-area{width: 500px;} /*검색창 전체 너비 지정*/
+.search-area{
+    width: 500px;
+    margin-left: 50px;
+} /*검색창 전체 너비 지정*/
 
 .search-area fieldset {
     padding: 2px;
@@ -256,47 +272,47 @@ nav{
     position:sticky;
     top:0;
     background-color: white;
+    /* padding-top: 10px; */
 }
 
 
 /* ul 스타일 지정 */
 nav>ul{
     margin:0;
-    padding:0;
+    /* padding-top: 10px; */
     list-style: none; /*li앞에 나오는 점, 숫자 등 없애는것*/
     display: flex;
     height: 100%;
     justify-content: center;
 }
+
+nav>ul>div {
+    height: 100%;
+}
 /* navigator 메뉴 */
-nav li{
+.category_list{
     flex-basis: 150px;
+    padding-top:10px;
+
+
 }
 
 /* 메뉴 내부 a태그 */
 nav li>a{
     text-decoration: none; /*밑줄 없애기*/
-    font-size: 18px;
     font-weight: bold;
     color:black;
     display: block;
     height: 100%;
     
-    /* 글자 정렬
-    padding: 11px 0; 세로 가로
-    text-align: center; */
-
-    /* 글자 정렬: 같은 방법(내부에 작성된 글자를 요소로 취급) */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 5px;
     transition-duration: 0.3s;
 
 }
 
-nav li>a:hover{
+.category_list:hover{
     background-color: var(--lightYellow);
+    border-radius: 5px;
     
     /* color: white; */
 }
@@ -304,7 +320,7 @@ nav li>a:hover{
 .category__detail{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -316,7 +332,8 @@ nav li>a:hover{
 }
 
 .category__detail p {
-    font-size: 13px;
+    padding-top: 10px;
+    font-size: 14px;
     text-align:center;
     font-weight: 600;
 }
@@ -326,13 +343,15 @@ nav li>a:hover{
 /* content -------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------- */
 section.content{
-    min-height: 800px;
+    /* min-height: 800px; */
     display:flex;
 }
 
 .content-1{flex-basis:20%;}
 .content-2{flex-basis:60%;}
 .content-3{flex-basis:20%;}
+
+
 
 
 

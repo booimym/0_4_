@@ -132,7 +132,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">투썸 마스카포네 치즈를 팝니다. 마싯서용</div>
@@ -149,7 +149,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">거지같은 옷</div>
@@ -165,7 +165,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">이딴게 옷?</div>
@@ -182,7 +182,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">이상한 옷</div>
@@ -200,7 +200,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">비싼 옷</div>
@@ -232,7 +232,9 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot">
+                                        안녕
+                                    </i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">깨꾹이인형 팔아요</div>
@@ -250,7 +252,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">이클립스냠냠</div>
@@ -267,7 +269,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">파닥몬파닥파닥</div>
@@ -285,7 +287,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">냥냐얀ㅇ야야야야야야야야야ㅑ야야야ㅑ야ㅑ</div>
@@ -303,7 +305,7 @@
                             <div>
                                 <div class="favorite__img">
                                     <img src="images/sampleGoods.jpg" class="favorite__img">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" id = "dot"></i>
                                 </div>
                                 <div class="favorite__price-heart">
                                     <div class="favorite__price">집에 가고싶어지는 시간 바로 지금</div>
@@ -325,13 +327,13 @@
                     
                 </section>
                 
-                <div class="popup_layer" id="popup_layer" style="display: none;">
-                    <div class="popup_box">
+                <div class="popup_layer Scroll" id="popup_layer" style="display: none;">
+                    <div class="popup_box Scroll">
                         <div style="height: 10px; width: 375px; float: top;">
                             <a href="javascript:closePop();"><i class="fa-solid fa-x" id = "fa-x"></i></a>
                         </div>
                         <!--팝업 컨텐츠 영역-->
-                        <div class="popup_cont">
+                        <div class="popup_cont Scroll">
                                     <!-- 섹선1------------------------------------------------------------>
                                     <section class = "title">
                                         <div class = "title_image"><img  src="images/bananaTree.png" alt=""></div>
@@ -447,13 +449,19 @@
                                             <div class="question_leaf"><img src="images/2leaf (1).png" alt=""></div>
                                             <p>따뜻한 거래경험을 알려주세요</p>
                                         </div>
-                                        <p>남겨주신 거래후기는 상대방의 프로필에 공개돼요.</p>
+                                        <p class = "questionNext">남겨주신 거래후기는 상대방의 프로필에 공개돼요.</p>
                                     </section>
                                     <!-- 섹선6------------------------------------------------------------->
-                                    <section class = "answer2">
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <section >
+                                        <textarea name="" id="" class = "answer2" 
+                                        cols="30" rows="10"
+                                        placeholder="내용을 입력해주세요."></textarea>
+                                        
                                     </section>
-                                    <button>제출하기</button>
+                                    <!-- 섹선6------------------------------------------------------------->
+                                    <section class = "submitBtn">
+                                        <button >제출하기</button>
+                                    </section>
     
                         </div>
                         <!--팝업 버튼 영역-->
@@ -461,6 +469,12 @@
                             <a href="javascript:closePop();">닫기</a>
                         </div>
                     </div>
+                </div>
+
+                <div id = "anotherPop">
+                    <div class = "anotherPop1">글 수정하기</div>
+                    <div class = "anotherPop1">글 삭제하기</div>
+                    <div class = "anotherPop1">글 끌올하기</div>
                 </div>
             </section>
         </div>
