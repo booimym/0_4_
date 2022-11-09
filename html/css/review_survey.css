@@ -2,9 +2,12 @@
         border: 1px solid red;
 } */
 
-/* **섹선1************************  */
+/* **섹선1*******************************************  */
 .title {
     display : flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 .title > .title_image {
@@ -15,15 +18,32 @@
     
 }
 .title_image >img:only-child{
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
+    margin : 10px;
 }
 .title > p:only-of-type{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    font-size: 30px;
 }
-/* 섹선2*************************** */
+/* 섹선2************************************************* */
+.question1 > p:first-child {
+    font-size : 20px;
+    font-weight: bold;
+}
+.choice {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice > div{
+    margin:20px;
+}
+
 .goodchoice {
     display: none;
 }
@@ -39,39 +59,45 @@
 
     background-image: url(../images/banana-logo.png);
     background-repeat: no-repeat;
-    background-size : 55px;
+    background-size : 65px;
+    
     
 }
 .goodchoice:checked + label {
     
     background-image: url(../images/banana-logo.png);
     background-repeat: no-repeat;
-    background-size : 55px;
-    background-position: -1px 10px;
+    background-size : 65px;
+    /* background-position: -1px 10px; */
 }
 
-.goodchoice:un + label {
-    
-    background-image: url(../images/banana-logo.png);
-    background-repeat: no-repeat;
-    background-size : 55px;
-    /* background-position: -1px 4px; */
-}
+
 
 .badchoice + label {
+    width : 65px; height : 65px; border : 1px solid #ccc;
     cursor : pointer;
 
     /* 수평분할 + 크기조정 0 */
     display : inline-block; 
+
+    background-image: url(../images/sadBanana.gif);
+    background-repeat: no-repeat;
+    background-size : 65px;
+    
+
 }
-/****섹선3(1)*************************** */
-/****섹선4(1)************************  */
+
+.badchoice:checked + label {
+
+}
+/****섹선3(1)******************************************* */
+/****섹선4(1)*******************************************  */
 .goodAnswer {
     display: flex;
     flex-direction: column;
 }
-/****섹선3(2)*************************** */
-/* **섹선4(2)************************  */
+/****섹선3(2)******************************************** */
+/* **섹선4(2)********************************************  */
 .badAnswer {
     display: flex;
     flex-direction: column;
@@ -83,6 +109,7 @@
 } */
 .question {
     display: flex;
+    margin-top : 20px;
 }
 
 .question_leaf {

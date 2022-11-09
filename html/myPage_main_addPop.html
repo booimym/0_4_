@@ -328,7 +328,7 @@
                 <div class="popup_layer" id="popup_layer" style="display: none;">
                     <div class="popup_box">
                         <div style="height: 10px; width: 375px; float: top;">
-                            <a href="javascript:closePop();"><i class="fa-solid fa-x"></i></a>
+                            <a href="javascript:closePop();"><i class="fa-solid fa-x" id = "fa-x"></i></a>
                         </div>
                         <!--팝업 컨텐츠 영역-->
                         <div class="popup_cont">
@@ -343,13 +343,17 @@
                                         <p>바나나님,</p>
                                         <p>냥냥님과의 거래가 어떠셨나요?</p>
                                         <p>거래선호도는 나만 볼 수 있어요</p>
-                                        <div>
+                                        <div class = "choice">
+                                            <div>
                                             <input type="checkbox" name = "badchoice" class = "badchoice" id = "badchoice" value="badchoice">
-                                            <label for="badchoice">별로예요</label>
+                                            <label for="badchoice"></label>
+                                            <p>별로예요</p>
+                                            </div>
+                                            <div>
                                             <input type="checkbox" name = "goodchoice" class = "goodchoice" id = "goodchoice" value="goodchoice">
-                                            <label for="goodchoice">최고예요</label>
-                                            <div></div>
-                                            <div></div>
+                                            <label for="goodchoice"></label>
+                                            <p>최고예요</p>
+                                            </div>
                                             <!-- <a href="javascript:doDisplay();">별로예요</a> -->
                                         </div>
                                     </section>

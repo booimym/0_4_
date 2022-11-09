@@ -1,5 +1,6 @@
 
 const conB = document.getElementById("badsection");
+const conG = document.getElementById("goodsection");
 conB.style.display = 'none';
 document.getElementById("badchoice").addEventListener("click",function(){
         if(conB.style.display=='none'){ 		
@@ -12,6 +13,11 @@ document.getElementById("badchoice").addEventListener("click",function(){
 
 })
 
+const xButton = document.getElementById("fa-x");
+xButton.addEventListener("click",function(){
+    conB.style.display = 'none';
+    conG.style.display = 'none';
+})
 
 // document.getElementById("goodchoice").addEventListener("change",function(){
 //     var con = document.getElementById("goodsection");
@@ -23,7 +29,7 @@ document.getElementById("badchoice").addEventListener("click",function(){
 
 // })
 
-const conG = document.getElementById("goodsection");
+
 conG.style.display = 'none';
 document.getElementById("goodchoice").addEventListener("change",function(){
         if(conG.style.display=='none'){ 		
