@@ -313,14 +313,41 @@
 .favorite__pack > div {
     position :relative;
 }
-
-
 .fa-ellipsis-vertical {
     z-index: 1002;
     position: absolute;
     right : 10px;
     top : 10px;
     cursor: pointer;
+}
+/****************************************/
+
+.favorite__img {
+    position: relative;
+}
+/*자슥 글3개*/
+.anotherPop{
+    position : absolute;
+    z-index: 1002;
+    right : 18px;
+    top : 10px;
+    cursor: pointer;
+    background-color: rgb(245, 237, 237);
+    border: 1px solid black;
+    
+}
+
+.babo{
+    border-bottom: 1px solid black;
+}
+
+.anotherPop1{
+    width: 80px;
+    height: 21px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

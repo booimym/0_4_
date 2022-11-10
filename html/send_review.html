@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/review_survey.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            height: 600px;
+            width: 600px;
+            background-color: var(--lightYellow);
+        }
+
+        .send_message1{
+            background-color: var(--yellow);
+            padding: 20px;
+            
+        }
+
+        .send_message2, .send_message3 {
+            background-color: var(--lightYellow);
+            padding: 20px;
+        }
+        .send_message1 > p:first-child {
+            margin : 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .send_message1 > p:nth-child(2){
+            margin : 20px;
+            color : gray;
+        }
+
+        .send_message2 > * {
+            margin : 20px;
+        }
+        
+        .send_message3 {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .send_message3  > div {
+            
+            width: 130px;
+            height: 130px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .send_message3 button {
+            background-color: var(--menu);
+            font-size: 13px;
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <section>
+    <section class = "send_message1">
         <p>
             으넛님에게 따뜻한 후기를 보냈어요!
         </p>
@@ -15,12 +79,16 @@
             으넛님과 피카츄를 거래했어요!
         </p>
     </section>
-    <section>
-
+    <section class = "send_message2">
+        <p>나눔을 해주셨어요</p>
+        <p>상품상태가 설명한것과 같아요</p>
+        <p>상품설명이 자세해요</p>
+        <p>좋은 상품을 저렴하게 판매해요</p>
+        <p>시간약속을 잘 지켜요</p>
     </section>
-    <section>
-    <button>받은 후기 보기</button>
-    <img src="images/2leaf (1).png" alt="">
+    <section class = "send_message3">
+        <div><button>받은 후기 보기</button></div>
+        <img src="images/2leaf (1).png" alt="">
     </section>
 </body>
 </html>

@@ -184,7 +184,12 @@ input[name="bad"] {
     font-size: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    padding:20px;
 
+}
+
+textarea:focus{
+    outline : none;
 }
 
 .submitBtn {
@@ -193,12 +198,15 @@ input[name="bad"] {
 }
 
 .submitBtn > button {
-   
-   width: 100px;
-   height:40px;
-   font-size: 15px;
-   background-color: var(--menu);
-   border: 1px solid #ccc;
-   border-radius: 8px;
+
+    width: 100px;
+    height:40px;
+    font-size: 15px;
+    background-color: var(--menu);
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
+
+
+
 
