@@ -197,7 +197,7 @@ textarea:focus{
     justify-content: end;
 }
 
-.submitBtn > button {
+.submitBtn  button {
 
     width: 100px;
     height:40px;

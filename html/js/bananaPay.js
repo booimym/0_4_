@@ -9,6 +9,26 @@ function closePop() {
     document.getElementById("popup_layer").style.display = "none";
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
+//팝업 띄우기
+function openPop2() {
+    document.getElementById("popup_layer2").style.display = "block";
+
+}
+
+//팝업 닫기
+function closePop2() {
+    document.getElementById("popup_layer2").style.display = "none";
+}
+
+document.getElementById("submitButton").addEventListener("click",function(){
+
+    document.getElementById("popup_layer2").style.display = "block";
+    document.getElementById("popup_layer").style.display = "none";
+
+})
+
 
 
 // document.getElementById("anotherPop").style.display="none";

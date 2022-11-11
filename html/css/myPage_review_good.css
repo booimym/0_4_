@@ -9,7 +9,11 @@
 
 .title > * {
     padding: 50px 30px 50px 30px;
+    font-weight: bold;
+    
 }
+
+
 
 
 .content{
@@ -21,18 +25,54 @@
     padding : 30px;
     font-size: 18px;
     width: 30%;
+    
 }
 
+.side1:hover, .side2:hover {
+    background-color:#ddd;
+}
 .side > div {
     display: flex;
     padding : 30px;
 
 }
 
-.main {
+.side1 > * , .side2 > * , .main_title > * {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.side2 > * {
+    margin-right: 10px;
+}
+.lightbulb {
+    position: relative;
+}
+
+.lightbulb_inner {
+    position: absolute;
+    background-color: #ddd;
+    width: 350px;
+    height: 300px;
+    font-size: 13px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding : 30px;
+    top:20px;
+    right:20px;
+}
+
+.lightbulb_inner > * {
+    margin-bottom: 10px;
+}
+
+/* ************************************************************************* */
+.mainGood, .mainBad {
     padding :30px;
     width : 70%;
 }
+
 
 .main_title {
     display : flex;
@@ -43,4 +83,26 @@
 .main_content > div {
     border-bottom: 1px solid #ddd;
     padding:30px;
+}
+
+
+
+.fa-face-smile-beam {
+    
+    background-color: yellow;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.review  * {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.review > div{
+    display: flex;
+
 }
