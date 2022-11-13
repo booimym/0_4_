@@ -14,12 +14,21 @@ function closePop() {
 //팝업 띄우기
 function openPop2() {
     document.getElementById("popup_layer2").style.display = "block";
+    
 
 }
 
 //팝업 닫기
 function closePop2() {
     document.getElementById("popup_layer2").style.display = "none";
+    const popopen = document.getElementById("popopen");
+
+    // popopen.innerText= "<div class='testcolor2'>보낸 후기 보기</div>";
+    popopen.innerText = "보낸 후기 보기"
+    popopen.classList.add("testcolor2");
+
+    popopen.setAttribute("href", "#");
+    
 }
 
 document.getElementById("submitButton").addEventListener("click",function(){
@@ -28,6 +37,9 @@ document.getElementById("submitButton").addEventListener("click",function(){
     document.getElementById("popup_layer").style.display = "none";
 
 })
+
+
+
 
 
 
@@ -115,3 +127,4 @@ document.addEventListener("click",function(e){
 
 
 })
+

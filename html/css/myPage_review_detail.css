@@ -48,15 +48,18 @@
 .photo{
     display: flex;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
 
 .photo > img {
     border: 2px solid black;
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    width: 80px;
+    height: 80px;
     margin-top: 10px;
+    
 }
 
 .row1 {

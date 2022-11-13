@@ -11,6 +11,8 @@
 
 */
 
+a { text-decoration:none }
+
 .myBanana{
 
     /* min-height: 1500px; */
@@ -410,6 +412,7 @@
     align-items: center;
     font-size: 13px;
     background-color: var(--menu);
+    text-decoration: none;
 }
 .testcolor2{
     color: orangered;
@@ -421,6 +424,7 @@
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    text-decoration: none;
 }
 
 

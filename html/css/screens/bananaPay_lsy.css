@@ -50,7 +50,7 @@
     top: 50%;
     left: 50%;
     /* overflow-y: scroll; */
-    height: 600px;
+    /* height: 600px; */
     width: 600px;
     transform: translate(-50%, -50%);
     z-index: 1003;
@@ -174,8 +174,8 @@
 
 
 .popup_cont2 {
-    height: 600px;
-    width: 600px;
+    /* height: 600px; */
+    /* width: 600px; */
     background-color: var(--lightYellow);
     border-radius: 20px;
 }
@@ -212,6 +212,8 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .send_message3  > div {
@@ -226,10 +228,10 @@
 
 .send_message3 button {
     background-color: var(--menu);
-    font-size: 13px;
-    font-weight: bold;
-    width: 100px;
-    height: 40px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    width: 120px;
+    height: 50px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ddd;
