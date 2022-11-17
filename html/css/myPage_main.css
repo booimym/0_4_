@@ -108,6 +108,10 @@ a { text-decoration:none }
     
 
 }
+
+.fa-pen {
+    cursor: pointer;
+}
 .myBanana-content {
     /* border :1px solid black; */
     width:70%;

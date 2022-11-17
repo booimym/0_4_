@@ -11,7 +11,7 @@ function closePop() {
 
 //////////////////////////////////////////////////////////////////////////////
 
-//팝업 띄우기
+//팝업 띄우기 
 function openPop2() {
     document.getElementById("popup_layer2").style.display = "block";
     
@@ -127,4 +127,20 @@ document.addEventListener("click",function(e){
 
 
 })
+const intro = document.getElementById("p_intro");
+document.getElementById("pen_intro").addEventListener("click",function(){
+
+    const introChangeForm = document.createElement("form");
+
+
+
+})
+
+document.getElementById("fourth-category").addEventListener("click",function(){
+
+})
+document.getElementById("reviewss").style.display = 'none';
+
+
+
 

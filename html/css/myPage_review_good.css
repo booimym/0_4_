@@ -29,43 +29,74 @@
 }
 
 .side1:hover, .side2:hover {
-    background-color:#ddd;
+    background-color:var(--lightYellow);
+    border-bottom: 1px solid #ddd;
 }
 .side > div {
     display: flex;
     padding : 30px;
+    
 
 }
 
 .side1 > * , .side2 > * , .main_title > * {
     font-weight: bold;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.side2 > * {
-    margin-right: 10px;
+.imo {
+    font-size: 30px;
 }
+
+.imo1 {
+    font-size: 20px;
+}
+
+
 .lightbulb {
     position: relative;
 }
 
 .lightbulb_inner {
     position: absolute;
-    background-color: #ddd;
+    border: 2px solid white;
+    background-color: var(--yellow);
+    width: 360px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:5px;
+    left:15px;
+    padding : 30px;
+    z-index: 1002;
+    box-shadow: 5px 5px 10px 0 #ccc;
+    
+    
+}
+
+.lightbulb_inner > div{
+    position: absolute;
+    top:3px;
+    left:3px;
+    z-index: 1002;
+    /* border: 5px solid yellow; */
+    background-color: white;
     width: 350px;
     height: 300px;
     font-size: 13px;
+    padding : 30px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    padding : 30px;
-    top:10px;
-    left:0px;
    
-    z-index: 1002;
+    
 }
 
-.lightbulb_inner > * {
+.lightbulb_inner > div > * {
     margin-bottom: 10px;
 }
 
@@ -88,11 +119,6 @@
 }
 
 
-
-.fa-face-smile-beam {
-    
-    background-color: yellow;
-}
 
 .review {
     display: flex;

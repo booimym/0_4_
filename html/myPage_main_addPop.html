@@ -17,6 +17,18 @@
 
     <script src="https://kit.fontawesome.com/f7459b8054.js" crossorigin="anonymous"></script>
 
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+    $(document).ready( function() {
+
+    $("#reviewssss").load("myPage_review.html");  // 원하는 파일 경로를 삽입하면 된다
+    $("#footers").load("common/footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+
+    });
+    </script>
+
+
+
 </head>
 
 <body>
@@ -89,12 +101,14 @@
                         <div class = "myBanana-name">냥냥이</div>
                         <div class = "myBanana-address">도화동</div>
                         <div class = "myBanana-changeInfo">
-                            <i class="fa-solid fa-pen"></i>                        </div>
+                            <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                                    
+                        </div>
                     </div>
 
                     <div class = "myBanana-intro">
-                        <p>나는 썩은 바나나가 아니에요</p>
-                        <i id = "pen_intro" class = "fa-solid fa-pen" ></i>
+                        <p id = "p_intro">나는 썩은 바나나가 아니에요</p>
+                        <a href="#"><i id = "pen_intro" class = "fa-solid fa-pen" ></i></a>
                                             
                     </div>
                     <div class = "myBanana-temp">
@@ -104,7 +118,11 @@
                 </div>
             </section>
              <!--섹션4********************************************************************************************************섹션1-->
-            <section class = "myBanana-category">
+             <div id="reviewssss"></div>
+            
+
+
+             <section class = "myBanana-category">
                 <div id =first-category>판매내역</div>
                 <div id =second-category>구매내역</div>
                 <div id =third-category>관심목록</div>
@@ -538,7 +556,7 @@
     </footer>
     <!-- footer 끝----------------------------------------------------------------------------------------- -->
 
-    <script src = "../html/js/bananaPay.js"></script>
+    <script src = "../html/js/bananaPay_lsy.js"></script>
     <script src="js/review_survey.js"></script>
 </body>
 
