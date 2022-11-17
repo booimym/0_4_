@@ -42,3 +42,4 @@ document.addEventListener("click",function(e){
     document.getElementById("lightbulb_inner").style.display='none';
 
 })
+

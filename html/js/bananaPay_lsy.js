@@ -137,9 +137,12 @@ document.getElementById("pen_intro").addEventListener("click",function(){
 })
 
 document.getElementById("fourth-category").addEventListener("click",function(){
-
+    alert("안녕");
+    // document.getElementById("popup_layer2").style.display = "block";
+    //document.getElementById("reviewsss").style.display = "block";
+    console.log(document.getElementById("myBanana-sellList"));
+    document.getElementById("myBanana-sellList").style.display = "none";
 })
-document.getElementById("reviewss").style.display = 'none';
 
 
 
