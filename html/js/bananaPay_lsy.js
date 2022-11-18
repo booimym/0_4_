@@ -136,14 +136,49 @@ document.getElementById("pen_intro").addEventListener("click",function(){
 
 })
 
+
+
+/*
 document.getElementById("fourth-category").addEventListener("click",function(){
     alert("안녕");
     // document.getElementById("popup_layer2").style.display = "block";
-    //document.getElementById("reviewsss").style.display = "block";
     console.log(document.getElementById("myBanana-sellList"));
     document.getElementById("myBanana-sellList").style.display = "none";
+    document.getElementById("reviewsss").style.display = "block";
 })
+*/
+// document.getElementById("first-category").addEventListener("click",function(){
+//     alert("안녕");
+//     // document.getElementById("popup_layer2").style.display = "block";
+//     console.log(document.getElementById("myBanana-sellList"));
+//     document.getElementById("myBanana-sellList").style.display = "block";
+//     document.getElementById("reviewsss").style.display = "none";
+// })
 
+
+
+const rw = document.getElementById("reviewsss");
+const ms = document.getElementById("myBanana-sellList");
+
+
+document.getElementById("fourth-category").addEventListener("click",function(){
+    alert("안녕");
+    console.log(document.getElementById("myBanana-sellList"));
+
+
+    // ms.style.display = "none";
+    // rw.style.display = "block"; 
+
+    if(ms.style.display== "block"){
+        alert("if문 확인")
+        rw.style.display = "block"; 
+
+    }else{
+        alert("else문 확인")
+        rw.style.display = "none"; 
+
+    }
+})
 
 
 
