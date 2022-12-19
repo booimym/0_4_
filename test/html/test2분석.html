@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //즉시 실행 함수 : (function(){})() 이렇게 생김. - 15.함수.html
+        (function(){
+
+            // $(document).ready(function(){ }); 와 같은 의미로
+            // html문서가 로딩이 되면.... 뭐 이런 뜻이래 
+            // 여기 안에다가 jQuery메소드를 입력하면 된다.
+            $(function(){
+
+                // https://carrotweb.tistory.com/219 : $(selector)[0]이란
+                // 걍 document.getElementById("calendar");랑 같은 거임
+                var calendarEl = $('#calendar')[0];
+
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                });
+            })
+
+        })();
+
+        
+    </script>
+</body>
+</html>

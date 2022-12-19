@@ -1,0 +1,45 @@
+
+/* 미니홈피 iframe */
+.box{
+    width: 940px;
+    height: 600px;
+    background-color: gray;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+}
+
+/* 폴더 있는 sidebar */
+.side-bar{
+    width: 269px;
+    height: 588px;
+    background-color: yellow;
+}
+
+/* 메인 영역 */
+.diary-content{
+    width: 647px;
+    height: 588px;
+    background-color: white;
+
+}
+/* 맨 위의 폴더 이름 있는 곳 */
+.category{
+    background-color: red;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.calendar-section{
+    height : 50px;
+    background-color: green;
+    display: flex;
+}
+
+.diary-section {
+    border: 1px solid black;
+    background-color: violet;
+}
